@@ -5,7 +5,7 @@ node {
     buildInfo.number = 'PR-001'    
     stage ('Build') {
         git url: 'https://github.com/jfrog/jenkins-artifactory-plugin.git'
-        server = Artifactory.server 'Artifactory'
+        server = Artifactory.server 'Artifactory-shilpa-mill'
         issuesCollectionConfig = """{
             "version": 1,
             "issues": {
