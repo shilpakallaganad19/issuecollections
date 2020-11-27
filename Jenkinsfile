@@ -1,8 +1,8 @@
 node {
     def server
     buildInfo = Artifactory.newBuildInfo()
-    buildInfo.name = 'super-frog'
-    buildInfo.number = 'v#1.2.3'    
+    buildInfo.name = 'Eagle Investment Systems :: ce-component-oauth-aad'
+    buildInfo.number = 'PR-001'    
     stage ('Build') {
         git url: 'https://github.com/jfrog/jenkins-artifactory-plugin.git'
         server = Artifactory.server 'Artifactory'
